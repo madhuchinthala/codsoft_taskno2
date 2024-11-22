@@ -1,0 +1,266 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   
+} 
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7d14b4;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+  /* header */
+  header{
+    position: fixed;
+    width:100%;
+  }
+.name{
+    display:flex;
+    justify-content:space-between;
+    padding:25px;
+    background-color: grey;
+   
+     /* position:fixed;
+     width:100%; */
+}
+.name h1{
+    color:chartreuse;
+   
+
+}
+ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-evenly;
+    gap:50px;
+    font-size: 20px;
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 400;  
+}
+ul a{ 
+    text-decoration: none;
+    color:white;
+    position: relative;
+}
+.name ul li a:hover{
+    transition: 0.3s;
+    color:chartreuse;
+}
+.name ul  a::after{
+    content:" ";
+    height:2px;
+    width:0%;
+    background-color:chartreuse;
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition: 0.3s;
+}
+.name ul a:hover:after{
+    width:100%;
+}
+/* About Page */
+.AboutPage{
+    display: grid;
+    padding-top:100px;
+    grid-template-columns: 1fr 1fr ;
+    font-size: 2rem;
+    background-color:rgba(119, 136, 153, 0.384);
+}
+.AboutPage .child1{
+    padding-top:50px;
+    margin:30px auto;
+    grid-column:1/2;
+  
+}
+.AboutPage .child2{
+     margin:150px auto;
+    grid-column: 2/3;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.AboutPage .child2 h1{
+    color:red;
+}
+.AboutPage .child1 img{
+    border-radius: 90%;
+    width:450px;
+   height:450px;
+    border:2px  black;
+
+}
+/* Skills */
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    font-size: 2rem;
+   padding:40px;
+    background-color:rgba(119, 136, 153, 0.384);
+}
+
+.skills .child1{
+    margin:150px auto;
+    grid-column: 1/2;
+    font-size: 1.5rem;
+    line-height: 40px;
+ 
+}
+.skills .child1 h1{
+    color:red;
+}
+.skills .child2{
+    margin:40px auto;
+    grid-column:2/3;
+}
+.skills .child2 img{
+    border:2px  black;
+    border-radius: 90%;
+
+}
+
+/* achievements */
+.Achievements{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    font-size: 2rem;
+    background-color:rgba(119, 136, 153, 0.384);
+    padding:30px;
+    /* background-image: url("https://st2.depositphotos.com/3369547/10045/v/450/depositphotos_100451700-stock-illustration-achievement-icon-design.jpg"); */
+     
+}
+.Achievements .child1{
+    margin:30px auto;
+    grid-column:1/2;
+}
+.Achievements .child2{
+     margin:150px auto;
+    grid-column: 2/3;
+    font-size: 1.5rem;
+    line-height: 40px;
+    
+}
+.Achievements .child2 h1{
+    color:red;
+}
+.Achievements .child1 img{
+    border-radius: 10%;
+    height:500px;
+    width:500px;
+   border:2px  black;
+   
+    z-index:2;
+}
+.resume{
+    background-color:rgba(119, 136, 153, 0.384);
+    padding:100px auto;
+    display:flex;
+    justify-content: space-evenly;
+    height:100px;
+}
+/* .resume h4{
+    margin:30px;
+} */
+/* .resume a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+   
+    padding-top:-5px;
+   
+} */
+ .resume button{
+    width:150px;
+    height:40px;
+    padding: 1px ;
+ }
+ .resume button a{
+     text-decoration: none;
+     color:black;
+     font-weight: 500;
+     font-size: 1.5rem;
+     width:30px;
+     padding-top:3px;
+ }
+ .resume button:hover{
+    background-color: #fff;
+ }
+footer{
+    background-color:rgb(34, 31, 31);
+    height:100px;
+    color:white;
+}
+footer {
+    height:300px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color:white;
+    
+   
+}
+footer .left{
+    height:300px;
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+footer .right{
+    height:300px;
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+footer h2{
+    padding-bottom:20px;
+    font-weight: 800;
+}
+footer .left p{
+    padding-left: 90px;
+}
+footer .right p i{
+     color:red;
+     font-size: 32px;
+     letter-spacing: 20px;
+}
+footer .right p  .fa-instagram:hover{
+    color:rgb(212, 16, 163);
+}
+footer .right p  .fa-facebook:hover{
+    color:blue;  
+}
+footer .right p  .fa-whatsapp:hover{
+    color:green;   
+}
+footer .right p  .fa-twitter:hover{
+    color:blue;
+}
